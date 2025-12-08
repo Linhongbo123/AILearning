@@ -4,6 +4,7 @@
 """
 
 import torch
+
 import torch.nn as nn
 import torch.optim as optim
 import numpy as np
@@ -14,7 +15,6 @@ torch.manual_seed(42)
 np.random.seed(42)
 plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
 plt.rcParams['axes.unicode_minus'] = False
-
 # 定义逻辑回归模型
 class LogisticModel(nn.Module):
     def __init__(self):
